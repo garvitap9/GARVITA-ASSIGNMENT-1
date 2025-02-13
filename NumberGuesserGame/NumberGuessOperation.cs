@@ -15,19 +15,19 @@ namespace NumberGuesserGame
         {
             Console.WriteLine("Enter your username: ");
             string nameUser = Console.ReadLine();
-            int lRange = 1;
-            int uRange = 100;
+            int lowerRange = 1;
+            int upperRange = 100;
             Random randomNumberGenerated = new Random();
-            int numberToBeGuessed = randomNumberGenerated.Next(lRange, uRange);
+            int numberToBeGuessed = randomNumberGenerated.Next(lowerRange, upperRange);
             //Console.WriteLine(numberToBeGuessed);
             NumberGuessOperation numberGuessObject = new NumberGuessOperation();
 
             string userChoice;
             do
             {
-                int numberGeneratedRandomly = numberGuessObject.NumberGuessGameLogic(numberToBeGuessed, lRange, uRange, nameUser);
+                int numberGeneratedRandomly = numberGuessObject.NumberGuessGameLogic(numberToBeGuessed, lowerRange, upperRange, nameUser);
                 NumberGuessOperation.countingTrialsByUser = 0;
-                numberToBeGuessed = randomNumberGenerated.Next(lRange, uRange);
+                numberToBeGuessed = randomNumberGenerated.Next(lowerRange, upperRange);
                 //Console.WriteLine(numberToBeGuessed);
                 Console.WriteLine(" ");
                 Console.WriteLine("Want to play the Number Guessing Game again?");
@@ -39,7 +39,7 @@ namespace NumberGuesserGame
             Console.WriteLine("THANK YOU!! EXITING THE GAME...");
         }
 
-        public int NumberGuessGameLogic(int numberToBeGuessed, int lRange, int uRange, string userName)
+        public int NumberGuessGameLogic(int numberToBeGuessed, int lowerRange, int upperRange, string userName)
         {
             for (int i = 1; i <= countChancesOver; i++)
             {
@@ -49,7 +49,7 @@ namespace NumberGuesserGame
                 if (user_input_guess < numberToBeGuessed)
                 {
                     Console.WriteLine($"{userName} guessed a lower number!Try Again!");
-                    lRange = user_input_guess + 1;
+                    lowerRange = user_input_guess + 1;
                     countingTrialsByUser++;
                     if (i == countChancesOver)
                     {
@@ -61,7 +61,7 @@ namespace NumberGuesserGame
                 {
                     countingTrialsByUser++;
                     Console.WriteLine($"{userName} guessed a higher number!Try Again!");
-                    uRange = user_input_guess - 1;
+                    upperRange = user_input_guess - 1;
                     if (i == countChancesOver)
                     {
                         Console.WriteLine(" ");

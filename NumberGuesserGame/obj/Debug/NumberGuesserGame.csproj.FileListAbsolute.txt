@@ -5,3 +5,10 @@ C:\Users\garvita.pun\source\repos\ASSIGNMENTS\NumberGuesserGame\obj\Debug\Number
 C:\Users\garvita.pun\source\repos\ASSIGNMENTS\NumberGuesserGame\obj\Debug\NumberGuesserGame.csproj.CoreCompileInputs.cache
 C:\Users\garvita.pun\source\repos\ASSIGNMENTS\NumberGuesserGame\obj\Debug\NumberGuesserGame.exe
 C:\Users\garvita.pun\source\repos\ASSIGNMENTS\NumberGuesserGame\obj\Debug\NumberGuesserGame.pdb
+D:\ASSIGNMENTS\NumberGuesserGame\bin\Debug\NumberGuesserGame.exe.config
+D:\ASSIGNMENTS\NumberGuesserGame\bin\Debug\NumberGuesserGame.exe
+D:\ASSIGNMENTS\NumberGuesserGame\bin\Debug\NumberGuesserGame.pdb
+D:\ASSIGNMENTS\NumberGuesserGame\obj\Debug\NumberGuesserGame.csproj.AssemblyReference.cache
+D:\ASSIGNMENTS\NumberGuesserGame\obj\Debug\NumberGuesserGame.csproj.CoreCompileInputs.cache
+D:\ASSIGNMENTS\NumberGuesserGame\obj\Debug\NumberGuesserGame.exe
+D:\ASSIGNMENTS\NumberGuesserGame\obj\Debug\NumberGuesserGame.pdb
