@@ -45,11 +45,11 @@ namespace NumberGuesserGame
             {
                 Console.WriteLine(" ");
                 Console.WriteLine("ATTEMPT- " + i + " Guess the number: ");
-                int user_input_guess = int.Parse(Console.ReadLine());
-                if (user_input_guess < numberToBeGuessed)
+                int userInputGuess = int.Parse(Console.ReadLine());
+                if (userInputGuess < numberToBeGuessed)
                 {
                     Console.WriteLine($"{userName} guessed a lower number!Try Again!");
-                    lowerRange = user_input_guess + 1;
+                    lowerRange = userInputGuess + 1;
                     countingTrialsByUser++;
                     if (i == countChancesOver)
                     {
@@ -57,11 +57,11 @@ namespace NumberGuesserGame
                         break;
                     }
                 }
-                else if (user_input_guess > numberToBeGuessed)
+                else if (userInputGuess > numberToBeGuessed)
                 {
                     countingTrialsByUser++;
                     Console.WriteLine($"{userName} guessed a higher number!Try Again!");
-                    upperRange = user_input_guess - 1;
+                    upperRange = userInputGuess - 1;
                     if (i == countChancesOver)
                     {
                         Console.WriteLine(" ");
